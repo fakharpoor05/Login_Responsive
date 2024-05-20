@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+input:focus, input:active {
+    outline: 0;
+}
+
+.circle_1 {
+    width: 1000px;
+    height: 1000px;
+    position: fixed;
+    background-image: linear-gradient(to right, #94a3c2, #596888);
+    z-index: -1;
+    left: -9rem;
+    top: 54%;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    transform: translateY(-38%);
+    -webkit-transform: translateY(-38%);
+    -moz-transform: translateY(-38%);
+    -ms-transform: translateY(-38%);
+    -o-transform: translateY(-38%);
+}
+
+.login_page {
+    display: flex;
+    align-items: center;
+    width: 81%;
+    max-width: 1200px;
+    height: 600px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.login_page form {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, b255, 0.1);
+    backdrop-filter: blur(22px);
+}
+
+.login_page form h1 {
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.login_img {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+.login_img img {
+    object-fit: cover;
+}
+
+.form_group label {
+    margin-bottom: 0.5rem;
+    color: #fff;
+    padding-left: 12px;
+}
+
+.form_group input {
+    border: 2px solid #fff;
+    background-color: transparent;
+    height: 45px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.button_form {
+    width: 50%;
+}
+
+.button_form button{
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.buttom_form a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 770px) {
+    .login_img {
+        display: none;
+    }
+    .login_page form {
+        width: 100%;
+    }
+    .form_group , .button_form {
+        width: 80%;
+    }
+}
